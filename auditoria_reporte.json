@@ -1,0 +1,94 @@
+{
+  "archivo": "Medrano_Zamora_FINAL_COMPLETO.xlsx",
+  "hojas": [
+    {
+      "nombre": "Resultados del Escenario Basico",
+      "max_fila": 49,
+      "max_columna": 8,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 0
+    },
+    {
+      "nombre": "Análisis de Escenarios",
+      "max_fila": 79,
+      "max_columna": 10,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 0
+    },
+    {
+      "nombre": "Fundamento del Pronóstico",
+      "max_fila": 173,
+      "max_columna": 10,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 0
+    },
+    {
+      "nombre": "Fases",
+      "max_fila": 14,
+      "max_columna": 26,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 0
+    },
+    {
+      "nombre": "TAB1-3",
+      "max_fila": 60,
+      "max_columna": 20,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 10
+    },
+    {
+      "nombre": "TAB4-11",
+      "max_fila": 1000,
+      "max_columna": 26,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 1
+    },
+    {
+      "nombre": "Reint.IVA",
+      "max_fila": 24,
+      "max_columna": 6,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 0
+    },
+    {
+      "nombre": "Info.ReintIVA",
+      "max_fila": 217,
+      "max_columna": 1,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 0
+    },
+    {
+      "nombre": "Gráficos",
+      "max_fila": 1,
+      "max_columna": 1,
+      "errores": 0,
+      "formulas_sin_resultado": 0,
+      "ceros_en_datos": 0
+    }
+  ],
+  "errores_criticos": [],
+  "advertencias": [],
+  "ceros_sospechosos": [
+    "TAB1-3!F30: Cero en dato operativo",
+    "TAB1-3!F31: Cero en dato operativo",
+    "TAB1-3!F32: Cero en dato operativo",
+    "TAB1-3!F33: Cero en dato operativo",
+    "TAB1-3!F34: Cero en dato operativo",
+    "TAB1-3!F35: Cero en dato operativo",
+    "TAB1-3!F36: Cero en dato operativo",
+    "TAB1-3!J36: Cero en dato operativo",
+    "TAB1-3!F37: Cero en dato operativo",
+    "TAB1-3!F38: Cero en dato operativo",
+    "TAB4-11!G91: Cero en dato operativo"
+  ],
+  "total_celdas_analizadas": 17812,
+  "estado_general": "REVISION_REQUERIDA"
+}
