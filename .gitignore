@@ -1,0 +1,51 @@
+```markdown
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+.env
+.env.local
+*.env.*
+
+# Build and distribution artifacts
+build/
+dist/
+*.egg
+*.egg-info/
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.backup
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+```
+
+Wait, let me reconsider this. Looking at the added files again:
+- `DECISION_INVERSION.md` - markdown documentation
+- `Medrano_Zamora_BACKUP_ANTES_COMPLETAR.xlsx` - Excel backup file
+- `Medrano_Zamora_CON_DATOS_REALES.xlsx` - Excel data file  
+- `completar_datos_inversion.py` - Python source code
+
+The Excel files are data files, not build artifacts, and the others are source/config files. No compiled artifacts or dependencies were detected in the changes, so according to rule #6, I should output nothing.
+
+```markdown
+
+```
