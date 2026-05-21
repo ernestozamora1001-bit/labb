@@ -1,47 +1,45 @@
 ```
-# Environment
+# Excel backup files
+*.xlsx
+
+# Python compiled files
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+
+# Environment files
 .env
 .env.local
-.env.*
+*.env.*
+
+# Editors
+.vscode/
+.idea/
 
 # Dependencies
-node_modules/
-venv/
 .venv/
-__pycache__/
-.mypy_cache/
-.pytest_cache/
+venv/
+node_modules/
 
 # Build artifacts
 dist/
 build/
 target/
-*.pyc
-*.o
-*.obj
-*.out
 
-# Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# System
+# OS files
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-*.tmp
-
 # Coverage
+.coverage
 coverage/
 htmlcov/
-.coverage
 
-# Gradle
-.gradle/
+# Testing
+.pytest_cache/
+.mypy_cache/
 
 # Compressed files
 *.zip

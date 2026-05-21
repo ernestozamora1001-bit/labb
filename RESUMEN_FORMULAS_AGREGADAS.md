@@ -1,7 +1,8 @@
 # Resumen de Fórmulas Agregadas - Caso Hamacas
 
-## Archivo: Medrano Zamora.xlsx
-## Fecha: Mayo 2026
+## Archivo: Medrano_Zamora_COMPLETO.xlsx
+## Fecha de Actualización: Mayo 2026
+## Scripts Disponibles: apply_all_formulas.py (script maestro)
 
 ---
 
@@ -25,14 +26,14 @@ Se agregaron fórmulas para referenciar valores desde CUADRO 7:
 | C104 | =D187 | Gasto de Ventas (Fase 1) |
 | D104 | =E187 | Gasto de Ventas (Fase 2) |
 | E104 | =F187 | Gasto de Ventas (Fases 3-5) |
-| C105 | =D190 | Gasto de Distribución (Fase 1) |
-| D105 | =E190 | Gasto de Distribución (Fase 2) |
-| E105 | =F190 | Gasto de Distribución (Fases 3-5) |
+| C105 | =D191 | Gasto de Distribución (Fase 1) |
+| D105 | =E191 | Gasto de Distribución (Fase 2) |
+| E105 | =F191 | Gasto de Distribución (Fases 3-5) |
 
-**Nota:** Se completaron valores faltantes en CUADRO 7 fila 190:
-- D190: 60,000
-- E190: 80,000  
-- F190: 100,000
+**Nota:** Los valores en CUADRO 7 fila 191 ya existen:
+- D191: 60,000
+- E191: 80,000  
+- F191: 100,000
 
 ---
 
@@ -45,9 +46,10 @@ Se agregaron fórmulas para referenciar valores desde CUADRO 7:
 | D111 | =($E$88*100/360)*C111 | Cuentas por Cobrar |
 | D114 | =(E95*2/360)*C114 | Materiales Locales |
 | D115 | =(E96*2/360)*C115 | Materiales Importados |
-| D116 | =(D179*2/360)*C116 | Repuestos |
+| D116 | =(E100*2/360)*C116 | Repuestos |
 | D117 | =((E95+E96+E97+E98)/2/360)*C117 | Productos en Proceso |
 | D118 | =((E95+E96+E97+E98)*2/360)*C118 | Producto Terminado |
+| D120 | =D111+D114+D115+D116+D117+D118 | Requerimiento de Liquidez |
 | D121 | =SUM(D111:D118) | **Total Activo Circulante** |
 
 #### PASIVO CIRCULANTE:
@@ -56,7 +58,7 @@ Se agregaron fórmulas para referenciar valores desde CUADRO 7:
 |-------|---------|-------------|
 | D126 | =(E97*2/360)*C126 | Mano de Obra |
 | D127 | =(E98*2/360)*C127 | Servicios |
-| D129 | =((E184+E187+F190)/2/360)*C129 | Gastos Admin, Ventas y Distrib. |
+| D129 | =((E184+E187+E191)/2/360)*C129 | Gastos Admin, Ventas y Distrib. |
 | D131 | =I95*2/360*C131 | Gastos Financieros |
 | D132 | =SUM(D124:D131) | **Total Pasivo Circulante** |
 
@@ -66,9 +68,6 @@ Se agregaron fórmulas para referenciar valores desde CUADRO 7:
 |-------|---------|-------------|
 | D134 | =D121-D132 | **Capital de Trabajo Neto Requerido** |
 
-**Fórmula corregida:**
-- D120: =D111+D114+D115+D116+D117+D118 (Requerimiento de Liquidez)
-
 ---
 
 ### CUADRO 6: Costos Fijos y Variables (Filas 153-154)
@@ -77,8 +76,10 @@ Se agregaron fórmulas de totales:
 
 | Celda | Fórmula | Descripción |
 |-------|---------|-------------|
+| B153 | TOTAL COSTOS FIJOS | Etiqueta |
 | C153 | =SUMIF(C142:C152,"X",C142:C152) | Total Costos Fijos |
 | D153 | =SUMIF(D142:D152,"X",D142:D152) | Total Costos Variables |
+| B154 | COSTO TOTAL | Etiqueta |
 | C154 | =C153 | Costo Total Fijo |
 | D154 | =D153 | Costo Total Variable |
 
@@ -114,10 +115,10 @@ Capital de Trabajo Neto = Activo Circulante - Pasivo Circulante
 
 ## Referencias entre Cuadros
 
-- CUADRO 4 → CUADRO 7: Referencias a costos de operación
-- CUADRO 5 → CUADRO 4: Referencias a materiales y mano de obra
-- CUADRO 5 → CUADRO 7: Referencias a gastos administrativos
-- CUADRO 6: Tabla de clasificación con totales
+- CUADRO 4 → CUADRO 7: Referencias a costos de operación (filas 179, 184, 187, 191)
+- CUADRO 5 → CUADRO 4: Referencias a materiales y mano de obra (filas 95-98, 100)
+- CUADRO 5 → CUADRO 7: Referencias a gastos administrativos (filas 184, 187, 191)
+- CUADRO 6: Tabla de clasificación con totales SUMIF
 
 ---
 
@@ -126,11 +127,33 @@ Capital de Trabajo Neto = Activo Circulante - Pasivo Circulante
 ✅ **CUADRO 1**: Completo (fórmulas existentes preservadas)
 ✅ **CUADRO 2**: Completo (fórmulas existentes preservadas)
 ✅ **CUADRO 3**: Completo (fórmulas existentes preservadas)
-✅ **CUADRO 4**: Completado con fórmulas de referencia
-✅ **CUADRO 5**: Completado con fórmulas de cálculo
-✅ **CUADRO 6**: Completado con fórmulas de totales
-✅ **CUADRO 7**: Completo (fórmulas existentes + valores agregados)
+✅ **CUADRO 4**: Completado con 15 fórmulas de referencia
+✅ **CUADRO 5**: Completado con 14 fórmulas de cálculo
+✅ **CUADRO 6**: Completado con 4 fórmulas de totales
+✅ **CUADRO 7**: Completo (fórmulas existentes)
+
+**Total de fórmulas agregadas: 33**
 
 ---
 
-**Nota:** Las fórmulas utilizan la sintaxis de Excel en español (formato con "=" al inicio) y están diseñadas para calcular automáticamente cuando se abra el archivo en Excel.
+## Archivos Generados
+
+| Archivo | Descripción |
+|---------|-------------|
+| `Medrano_Zamora_COMPLETO.xlsx` | Archivo final con todas las fórmulas aplicadas |
+| `Medrano_Zamora_BACKUP.xlsx` | Backup de seguridad antes de aplicar cambios |
+| `apply_all_formulas.py` | Script maestro para aplicar todas las fórmulas |
+
+---
+
+## Cómo Usar
+
+1. **Script Maestro**: Ejecutar `python3 apply_all_formulas.py` para aplicar todas las fórmulas
+2. **Archivo Excel**: Abrir `Medrano_Zamora_COMPLETO.xlsx` en Excel
+3. Las fórmulas se calcularán automáticamente al abrir el archivo
+
+---
+
+**Nota:** Las fórmulas utilizan la sintaxis de Excel estándar (formato con "=" al inicio) y están diseñadas para calcular automáticamente cuando se abra el archivo en Excel.
+
+**Última actualización:** Mayo 2026
